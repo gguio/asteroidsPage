@@ -11,5 +11,10 @@
         "react-dom": "^18.2.0",
         "react-waypoint": "^10.3.0",
         "swr": "1.1.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.6.0",
+        "@types/react": "^18.2.21",
+        "typescript": "^5.2.2"
     }
 }
