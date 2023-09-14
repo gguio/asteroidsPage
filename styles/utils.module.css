@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+
+
+.container {
+    position: relative;
+
+    isolation: isolate;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 0 2 25%;
+
+    position: fixed;
+
+    z-index: -1;
+}
+
+.heading {
+    position: fixed;
+
+    background-color: black;
+}
+
+.right {
+    flex: 0 2 70%;
+
+    padding-top: 100px;
+
+    margin-left: 30%;
+}
+
+.button {
+    background-color: transparent;
+
+    color: aliceblue;
+    text-decoration: underline;
+
+    border-width: 0;
+}
+
+.buttonActive {
+    background-color: transparent;
+
+    color: aliceblue;
+    font-weight: bold;
+
+    border-width: 0;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.asteroidName {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.approachDate {
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-top: 30px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.backet {
+    position: fixed;
+    top: 132px;
+    right: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 24px;
+
+    padding: 16px;
+    margin: auto;
+    
+
+    width: 150px;
+    height: 161px;
+
+    background-color: #232526;
+}
+
+
+    
+
+
+.backet div:first-child {
+    align-self: flex-start;
+}
+
+.backet div div:first-child {
+    
+    font-weight: 700;
+}
+
+.buttonSend {
+    background-color: #F86600;
+    color: aliceblue;
+
+    border-width: 0;
+
+    padding: 8px 16px;
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-weight: 700;
+   
+
+    
+}
+
+.buttonGet {
+    background-color: #F86600;
+    color: aliceblue;
+
+    border-width: 0;
+
+    padding: 2px 11px;
+    border-radius: 16px;
+
+    font-size: 11px;
+    font-weight: 700;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.imgAsteroid {
+    max-width: 40px;
+    min-width: 10px;
+}
+
+.distance {
+    display: flex;
+    flex-direction: column;
+
+    width: max-content;
+}
+
+
+.waypoint {
+    position: absolute;
+    
+    left: 0;
+    bottom: 1000px;
+
+    width: 100%;
+
+    z-index: 1;
+}
+
+.armageddon{
+    font-family: 'Passion One', cursive;
+    text-transform: uppercase;
+    color: #F86600;
+    font-size: 32px;
+    font-weight: 400;
+
+    margin-left: 5%;
+
+}
+
+@media (max-width: 1000px) {
+    
+    .earth {
+        position: fixed;
+        top: 100px;
+        left: -100px;
+        
+        z-index: -1;
+    }
+
+        .backet {
+            top: 132px;
+            right: 10px;
+            
+    
+           
+        }
+   
+   
+}
+
+@media (max-width: 870px) {
+    .earth {
+            position: fixed;
+            top: 100px;
+            left: -250px;
+    
+            z-index: -1;
+        }
+    
+        .backet {
+            top: 90%;
+            right: 0;
+            left: 0;
+    
+            border-radius: 0;
+    
+            width: 100%;
+            height: 10%;
+    
+            flex-direction: row;
+        }
+}
+
+@media (max-width: 870px) {
+    .left {
+        width: 100%;
+    
+        position: relative;
+
+        padding-left: 5%;
+        
+    }
+    .armageddon {
+        font-size: 32px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .right {
+        flex: 0 2 100%;
+
+        margin-left: 20%;
+        margin-right: 10%;
+        padding: 0;
+    }
+
+    .container{
+        position: relative;
+
+        isolation: isolate;
+
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .approachDate {
+        font-size: 16px;
+    }
+    .asteroidName div {
+        font-size: 14px;
+    }
+    .distance {
+        font-size: 14px;
+    }
+    
+    .row1:last-child {
+        font-size: 14px;
+    }
+}
+
+
+
+.containerInner {
+    margin-block: 100px;
+    margin-inline: 15%;
+
+    width: 70%;
+
+    display: flex;
+    gap: 20px;
+}
+
+.containerInner div:last-child {
+    flex: 1 0 0%;
+
+    display: grid;
+    place-items: center;
+}
+
+.containerInner div img {
+    max-width: 50%;
+    min-width: 50px;
+   
+}
+
+.buttonBack {
+    margin-right: 10%;
+    margin-top:5%;
+
+    align-self: flex-start;
+}
+
+@media (max-width: 870px) {
+    .containerInner {
+        
+        flex-direction: column;
+    }
+
+    .buttonBack {
+        margin-left: 10%;
+        margin-bottom: 20%;
+    }
+}
+    
